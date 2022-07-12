@@ -6,7 +6,7 @@ import response
 
 
 
-bot = telebot.TeleBot('5420148108:AAFps6F2rEofKb7SFyXFvJVtFzn-i0OPHiw')
+bot = telebot.TeleBot('')
 
 
 def change_text(chat_id, message_id, user_id):

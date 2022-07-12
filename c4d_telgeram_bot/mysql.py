@@ -3,7 +3,7 @@ import json
 
 host = "db"
 user = "root"
-password = "5e4ZKbGTKUu7m6wNSBH9UZSZbPA8gRCeTS"
+password = ""
 db_name = "test"
 
 
