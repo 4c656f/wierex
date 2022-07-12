@@ -1,4 +1,4 @@
-# wierex
+# wierex.com
 
 This application allows you to monitor your rendering process in c4d
 
