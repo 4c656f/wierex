@@ -1,0 +1,9 @@
+certifi
+chardet
+idna
+PyMySQL
+jsons
+pyTelegramBotAPI
+python-dotenv
+requests
+urllib3

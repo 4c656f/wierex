@@ -1,0 +1,50 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: db
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 5e4ZKbGTKUu7m6wNSBH9UZSZbPA8gRCeTS
+    volumes:
+      - db:/var/lib/mysql
+
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 9000:80
+    environment:
+      - PMA_ARBITRARY=1
+
+  php:
+    container_name: php
+    hostname: php
+    restart: always
+    depends_on:
+      - db
+    build: ./php_server
+    ports:
+      - 9001:80
+
+  telebot:
+    container_name: tg
+    restart: always
+    build: ./c4d_telgeram_bot
+
+  node_server:
+    container_name: node_server
+    restart: always
+    build: ./node_server
+    depends_on:
+      - db
+    ports:
+      - 9002:3001
+
+
+volumes:
+  db:

@@ -1,0 +1,33 @@
+.download_main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.download_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.button_download{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    font-family: "IBM Plex Mono";
+    font-size: 10px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: left;
+    align-items: center;
+    font-weight: 200;
+    position: relative;
+    border-radius: 8px;
+}

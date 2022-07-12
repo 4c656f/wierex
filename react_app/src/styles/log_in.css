@@ -1,0 +1,113 @@
+.log_in_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-gap: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+.log_in_el{
+
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+
+@keyframes error_anim {
+    0%{
+        border: red solid 1px;
+
+    }
+
+    100%{
+        border: rgba(255, 0, 0, 0) solid 1px;
+    }
+
+}
+
+.input_error{
+    animation-duration: 2s;
+    animation-name: error_anim;
+
+}
+.button_log_in{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    font-family: "IBM Plex Mono";
+    font-size: 10px;
+    display: flex;
+    padding-left: 25px;
+    justify-content: left;
+    align-items: center;
+    font-weight: 200;
+    position: relative;
+}
+.arrow_svg{
+    margin-right: 30px;
+    position: absolute;
+    right: 0%;
+}
+.log_error{
+    font-family: "IBM Plex Mono";
+    position: absolute;
+    top: calc(0% - 20px);
+    font-size: 10px;
+    left: 0%;
+    margin-left: 10px;
+    color: #ff0000;
+}
+
+.input_telegram{
+    border: rgba(91, 91, 91, 0) solid 1px;
+    background-color: var(--color_second);
+    font-family: "IBM Plex Mono";
+    font-size: 10px;
+    padding-left: 25px;
+}
+
+.input_token{
+    border: rgba(91, 91, 91, 0) solid 1px;
+    background-color: var(--color_second);
+    font-family: "IBM Plex Mono";
+    font-size: 10px;
+    padding-left: 25px;
+}
+
+.input_telegram::placeholder{
+    font-family: "IBM Plex Mono";
+    font-size: 10px;
+    font-weight: 500;
+    color: #8D8D8D;
+    transition: 0.2s;
+}
+.input_token::placeholder{
+    font-family: "IBM Plex Mono";
+    font-size: 10px;
+    font-weight: 500;
+    color: #8D8D8D;
+    transition: 0.2s;
+}
+
+
+
+.input_telegram:focus{
+    outline: none;
+}
+.input_token:focus{
+    outline: none;
+}
+
+.input_telegram:focus::placeholder{
+    opacity: 0;
+}
+.input_token:focus::placeholder{
+    opacity: 0;
+}

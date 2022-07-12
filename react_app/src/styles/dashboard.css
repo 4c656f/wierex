@@ -1,0 +1,307 @@
+.dashboard{
+    height: 100%;
+
+    padding-top: 150px;
+
+
+
+
+}
+@font-face {
+    font-family: "PhonkSans";
+
+    src: url("./fonts/PhonkSans-Light.woff2");
+}
+.cards_container{
+    position: relative;
+
+    max-width: 920px;
+    transform: translate(-50%, 0%);
+    right: -50%;
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    justify-content: flex-start;
+}
+.dash_card{
+    height: 180px;
+    width: 300px;
+    border: black solid 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card_left_container{
+    margin-left: 10px;
+    width: 200px;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.name_status_container{
+    position: absolute;
+    top: 0%;
+}
+.progress_time_container{
+    position: absolute;
+    bottom: 0%;
+}
+.job_name{
+    margin-bottom: 7px;
+    font-family: "PhonkSans";
+}
+.job_status{
+    font-family: "IBM Plex Mono";
+    font-weight: 300;
+    font-size: 10px;
+}
+.job_progress{
+    margin-bottom: 5px;
+    font-family: "IBM Plex Mono";
+    font-weight: 300;
+    font-size: 10px;
+
+}
+.job_time{
+    font-family: "IBM Plex Mono";
+    font-weight: 300;
+    font-size: 10px;
+
+}
+
+.check_dot{
+    position: absolute;
+    top: calc(15% + 10px);
+    right: calc(0% + 30px);
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+
+}
+.check_dot_green{
+    background-color: greenyellow;
+}
+.check_dot_orange{
+    background-color: #bb4100;
+}
+.check_dot_gray{
+    background-color: #cecece;
+}
+.check_dot_fin{
+    background-color: #a8d2a5;
+}
+.bottom_bar{
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+.share_container{
+    position: absolute;
+    top: calc(15% + 4px);
+    right: calc(0% + 60px);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.share_container:hover{
+    background-color: var(--color_second);
+}
+.share_icon{
+    height: 16px;
+    stroke: black;
+    color: black;
+    outline: black;
+    cursor: pointer;
+}
+.share_icon > circle{
+    stroke: black;
+}
+.share_icon > path{
+    stroke: black;
+}
+.modal_share_bg{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.2;
+    top: 0%;
+    left: 0%;
+
+}
+.modal_share_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.modal_share{
+    position: relative;
+    height: 150px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.link_container{
+    width: 300px;
+    height: 45px;
+    background-color: var(--color_second);
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+.copy_button{
+
+    width: 120px;
+
+    height: 45px;
+    background-color: black;
+    margin-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.copy_button > div{
+    cursor: pointer;
+    font-family: "IBM Plex Mono";
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.link_container > div{
+    font-family: "IBM Plex Mono";
+    color: black;
+    font-size: 14px;
+    font-weight: 900;
+    margin-left: 40px;
+
+}
+
+.swap_container{
+    background-color: var(--color_second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+
+    right: calc(0% - 30px);
+    height: 26px;
+    width: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.swap_container:hover > svg > path{
+    stroke: black;
+}
+
+
+.swap{
+    cursor: pointer;
+    height: 20px;
+}
+
+.swap > path{
+    stroke: #5b5b5b;
+
+}
+
+.link_icon{
+    position: absolute;
+    margin-left: 15px;
+    height: 20px;
+}
+#first_path{
+    stroke-width: 0.1px;
+}
+
+
+.link_icon > path{
+    stroke: black;
+
+
+}
+
+.pre_loader_dash{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader > path{
+    fill: black;
+}
+.loader{
+    height: 25px;
+
+}
+.empty_jobs{
+    height: 100px;
+    width: 100%;
+    font-weight: 300;
+    color: #969696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Mono";
+}
+
+
+
+
+
+
+@media (max-width: 981px) {
+    .cards_container{
+        max-width: 620px;
+    }
+}
+@media (max-width: 692px) {
+    .cards_container{
+        width: min-content;
+    }
+}
+@media (max-width: 751px) {
+    .dashboard{
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 554px) {
+    .modal_share{
+        width: 80%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .modal_share > div > div {
+        font-size: 10px;
+    }
+
+}

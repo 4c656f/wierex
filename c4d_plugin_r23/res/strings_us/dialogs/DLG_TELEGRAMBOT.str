@@ -1,0 +1,12 @@
+// C4D-DialogResource
+
+DIALOGSTRINGS DLG_TELEGRAMBOT
+{
+  IDS_TEXT            "Type your code:";
+  IDS_TEXT3           "";
+  IDS_BUTTON1         "Enter";
+  IDS_CONTROL         "controls";
+  IDS_BUTTON2         "Open queue";
+  IDS_BUTTON4         "Sync with server";
+
+}
