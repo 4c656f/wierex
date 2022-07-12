@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2766f915-798b-4e88-b27a-6916511020a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/c4d_telgeram_bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/c4d_telgeram_bot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c4d_telgeram_bot/mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/c4d_telgeram_bot/mysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_server/c4d/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_server/c4d/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_server/telegram/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_server/telegram/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="2766f915-798b-4e88-b27a-6916511020a8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
